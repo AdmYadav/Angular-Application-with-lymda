@@ -1,0 +1,77 @@
+<!-- <span *ngIf="config">
+  <li *ngFor="let hero of config['data']">
+    {{hero['name']}} ::: {{hero['age']}}
+  </li>
+
+  <p>Heroes API URL is "{{config['data'][0]['name']}}"</p>
+  <p>Textfile URL is "{{config['data'][0]['age']}}"</p>
+</span> -->
+
+<span *ngIf="json_arr">
+<div class="polaroid hgt10" style="text-align:center">
+  <h1 style="display:inline" id="ctr">Here's all the survey students have entered</h1> 
+  </div>
+<div>
+<table class = "table polaroid">
+ <tr> 
+    <th>ID</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Street Address</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip</th>
+    <th>E-mail</th>
+    <th>Tel_no</th>
+    <th>Date</th>
+    <th>University Interest</th>
+    <th>Recommendation</th>
+    <th>About campus</th>
+  </tr>
+  <tr  *ngFor="let obj of json_arr">
+    <td>
+      {{obj['Id']}}
+    </td>
+    <td>
+      {{obj['FirstName']}}
+    </td>
+    <td>
+      {{obj['LastName']}}
+    </td>
+    <td>
+      {{obj['StreetAddr']}}
+    </td>
+    <td>
+      {{obj['City']}}
+    </td>
+    <td>
+      {{obj['State']}}
+    </td>
+    <td>
+      {{obj['Zip']}}
+    </td>
+    <td>
+      {{obj['E_mail']}}
+    </td>
+    <td>
+      {{obj['Tel_No']}}
+    </td>
+    <td>
+      {{obj['Dat']}}
+    </td>
+    <td>
+      {{obj['Uni_List']}}
+    </td>
+    <td>
+      {{obj['Recommendation']}}
+    </td>
+    <td>
+      {{obj['Abt_Campus']}}
+    </td>
+  </tr>
+</table>
+</div>
+</span>
+<div class = "bottom">
+  <h5>@ App developers Ajit and Haramrit</h5>
+</div>
