@@ -1,3 +1,2 @@
 # Angular-Application-with-lymda
-This project is build with angular framework which is deployed using docker with kubernates as the orchestration platform and using jersey for the REstful calls.
-The JPA instance used is Hibernate to connect with the mysql database on AWS.
+This project is buid on static S3 website which using AMAZON Gateway API for making restful calls on the Lymda functions which calls the Mysql RDS instance on the AWS.
